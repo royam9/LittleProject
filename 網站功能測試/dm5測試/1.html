@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mh-tip-wrap {
+            display: block;
+            position: absolute;
+            top: -40px;
+            left: -30px;
+            opacity: 0;
+            -webkit-transform: scale(.73);
+            transform: scale(.73);
+            transition: all .3s;
+            -webkit-backface-visibility: hidden;
+            max-height: 299px;
+            overflow: hidden;
+            z-index: 2
+        }
+
+        .mh-tip-wrap.active {
+            opacity: 1;
+            top: -20px;
+            left: -30px;
+            max-height: 330px;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+            z-index: 3
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mh-tip-wrap">
+        <h1>A</h1>
+    </div>
+    <div class="mh-tip-wrap.active">
+        <h1>B</h1>
+    </div>
+    <script>
+        function isIe() {
+            return ("ActiveXObject" in window);
+        }
+        function isIe8() {
+            // alert(!-[1,])//->IE678返回NaN 所以!NaN为true 标准浏览器返回-1 所以!-1为false
+            return isIe() && !-[1,] && document.documentMode;
+        }
+        //封面效果
+        if (isIe8()) {
+            $('.mh-tip-wrap').hide();
+            $(document).on('mouseenter', '.mh-item > .mh-cover', function () {
+                $wrap = $(this).nextAll('.mh-tip-wrap')
+                $wrap.addClass('active').show()
+            })
+            // 封面移入放大
+            $(document).on('mouseenter', '.mh-tip-wrap', function () {
+                $wrap = $(this)
+                $wrap.addClass('active').show()
+            })
+            // 封面移出缩小
+            $(document).on('mouseleave', '.mh-tip-wrap', function () {
+                $wrap = $(this) //.find('.mh-tip-wrap');
+                $wrap.removeClass('active').hide()
+            })
+        } else {
+            $(document).on('mouseenter', '.mh-tip-wrap', function () {
+                $wrap = $(this)
+                $wrap.addClass('active')
+            })
+            // 封面移出缩小
+            $(document).on('mouseleave', '.mh-tip-wrap', function () {
+                $wrap = $(this) //.find('.mh-tip-wrap');
+                $wrap.removeClass('active')
+            })
+        }
+    </script>
+</body>
+
+</html>

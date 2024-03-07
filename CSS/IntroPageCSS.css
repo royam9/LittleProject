@@ -1,0 +1,689 @@
+/* 字體 */
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css); */
+
+body {
+    font-family: 'Noto Sans TC', 'Helvetica', 'Arial', '黑體-繁', '微軟正黑體', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #c7c6c6;
+    box-sizing: border-box;
+}
+
+
+/* 超連結不要底線 */
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+/* 最上面白色區塊 */
+#topSection {
+    display: flex;
+    background-color: white;
+    /* background-color: #F2A516; */
+    height: 82.4px;
+    width: 100%;
+    align-items: center;
+
+}
+
+#compIcon {
+    width: 390px;
+    /* height: 34.9px; */
+    position: relative;
+    top: 10px;
+    left: 9px;
+    /* background-color: blueviolet; */
+}
+
+/* 最上區塊的右下 */
+.topRightPart {
+    align-self: flex-end;
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    right: 10px;
+    bottom: 3px;
+}
+
+/* 搜尋欄整體 */
+.Topsearch {
+    position: relative;
+    right: 20%;
+    display: flex;
+}
+
+.Topsearch>.search-bar {
+    flex: 4;
+    height: 30px;
+}
+
+.Topsearch>.search-btn {
+    flex: 1;
+    /* height: 30px; */
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 選擇語言塊 */
+.lansele {
+    margin-right: 20px;
+}
+
+/* 會員登入 註冊 */
+#memLogin {
+    position: relative;
+    bottom: 2px;
+}
+
+/* --------------------------------------------------- */
+
+/* 新聞和主體的夾層 */
+.Thebetween {
+    width: 100%;
+    height: 25px;
+    background-color: #666666;
+}
+
+/* ---------------------------------------------------- */
+
+/* 主體 */
+.main {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+
+    position: relative;
+    left: 10%;
+
+position: relative;
+    display: flex;
+    align-items: flex-start;
+
+    border-radius: 20px 0 0 0;
+
+}
+
+/* --------------------------------------------------- */
+
+/* 左邊區塊 */
+.leftWrap {
+    flex: 2;
+    /* height: 2790px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: relative;
+    background-color: #dc2920;
+
+    border-radius: 20px 0 0 0;
+
+
+}
+
+/* 左邊菜單 */
+.leftMenu {
+    width: 95%;
+    /* padding-right: 15px; */
+    margin-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: rgb(255, 255, 255); */
+
+}
+
+/* 當前頁面 */
+#nowMenu {
+    background-color: #dc2920;
+    color: white;
+}
+
+#nowMenu>img {
+    filter: invert(1);
+}
+
+/* 左邊菜單裡的一行*/
+.leftMenu>a {
+    color: #000000;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #ffffff;
+
+}
+
+/* 整框變色效果 */
+.Chome:hover{
+    color: #f2f2f2;
+    background-color: #5f5c55;
+    transition: all 0.3s ease;    
+}
+
+.Cstor:hover {
+    color: #000000;
+    background-color: rgb(223, 212, 54);
+    transition: all 0.3s ease;
+}
+
+.Crank:hover {
+    color: #f2f2f2;
+    background-color: rgb(137, 111, 211);
+    transition: all 0.3s ease;
+}
+
+.Chuesu:hover {
+    color: #f2f2f2;
+    background-color: rgb(205, 107, 50);
+    transition: all 0.3s ease;
+}
+
+/* ICON變色效果 */
+.leftMenu>a:hover .MenuIcon {
+    filter: invert(1);
+    transition: all 0.3s ease;
+}
+
+/* 左邊菜單圖片 */
+.leftMenu>a>img {
+    width: 35px;
+    position: relative;
+    left: 6%;
+    margin: auto;
+}
+
+/* 左邊菜單字體 */
+.leftMenu>a>h2 {
+    font-size: 25px;
+    /* background-color: gold; */
+    margin: auto;
+
+    /* position: relative;
+        left: -8%; */
+
+    margin-left: 25px;
+    margin-right: 60px;
+}
+
+/* ----------------------------------------------- */
+
+/* 左下廣告塊 */
+.leftBlock {
+    width: 95%;
+    height: 100%;
+    /* padding-right: 15px; */
+    margin-left: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+}
+
+.LBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.LBanner>div:hover{
+    filter: brightness(120%);
+}
+
+.LBanner>div>a>img {
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+
+/* 跳到頁面頂部 */
+#jumpTo {
+    width: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: fixed;
+    bottom: 20%;
+    left: 7%;
+
+    opacity: 0.6;
+
+    display: none;
+    
+    transition: all 0.3s ease;
+
+}
+
+.gotopAwrap{
+    border: 6px solid #5f5c558c;
+}
+
+#jumpTo>div {
+    /* border-top: 2px solid rgb(187, 182, 182);
+    border-bottom: 2px solid rgb(187, 182, 182); */
+    background-color: rgba(153, 153, 153, 0.582);
+    height: 50px;
+    width: 50px;
+
+}
+
+#jumpTo>div:hover {
+    filter: brightness(80%);
+    transition: all 0.3s ease;
+}
+
+#jumpTo>div>a {
+    width: 100%;
+    height: 100%;
+
+    display: inline-block;
+    text-align: center;
+
+}
+
+#jumpTo>div>a>svg {
+    color: #000;
+    position: relative;
+    top: 0%;
+    width: 100%;
+}
+
+/* ----------------------------------------------- */
+
+/* 菜單右邊區塊 */
+.mainIntro {
+    flex: 8;
+    /* background-color: aqua; */
+position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainIntro::before{
+    content: "";
+    left: -1%;
+    position: absolute;
+    background-color: #dc2920;
+    width: 1%;
+    height: 100%;
+    }
+
+/* 描述主體 */
+
+.CoverIntroWrap {
+    flex: 3;
+    height: 100%;
+    display: flex;
+
+    padding: 5%;
+
+    /* background-color: #b6b6b6; */
+    /* border: 2px solid black; */
+}
+
+/* 封面 */
+.BCover {
+    flex: 4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: #F2A516; */
+}
+
+.BCover>img {
+    width: 100%;
+}
+
+/* 描述 */
+
+.Cintro {
+    flex: 6;
+    padding-left: 5%;
+    /* padding-bottom: 5%; */
+
+}
+
+#Ctitle {
+    font-size: 50px;
+}
+
+/* 作家那列 */
+.authorPart {
+    display: flex;
+    margin-top: 4%;
+
+    /* justify-content: flex-start; */
+    position: relative;
+    align-items: center;
+
+    /* background-color: #5f5c55; */
+}
+
+/* 作家 */
+#Cauthor {
+    font-size: 25px;
+}
+
+/* 劇情 */
+.Cstory {
+    font-size: 20px;
+}
+
+/* 標籤 */
+.Chash>a {
+    color: #000000;
+    font-size: 15px;
+}
+
+/* 最新話與更新日期 */
+.CUwrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* background-color: #F27405; */
+    margin-top: 4%;
+
+}
+
+/* 讀最新話 */
+.Cread {
+    flex: 5;
+    /* width: 100%; */
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: #ffffff; */
+}
+
+.Cread>a {
+    /* width: 60%; */
+    background-color: rgb(206, 48, 48);
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+/* 更新日期 */
+.showUpdate {
+    /* background-color: aquamarine; */
+    flex: 4;
+    color: #666666;
+}
+
+/* 收藏 */
+.Clike {
+    width: 50%;
+
+    display: flex;
+
+    background-color: #ffffff;
+    border: 5px solid rgb(189, 189, 189);
+    border-radius: 15px;
+
+    position: absolute;
+    right: 0;
+
+    /* margin-right: 0; */
+    /* margin-top: 5%; */
+    
+}
+
+.Clike>button:hover{
+    filter: brightness(80%);
+}
+
+.Clike>button {
+    flex: 3;
+
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+
+    border: none;
+    border-right: 4px solid rgb(189, 189, 189);
+    border-radius: 10px 0 0 10px;
+
+    transition: all 0.3s ease-in;
+}
+
+/* 收藏裡面的圖片 */
+.Clike>button>img {
+    width: 30%;
+    flex: 1;
+}
+
+/* 收藏裡面的文字 */
+.Clike>button>p {
+    flex: 2;
+
+    /* background-color: #F27405; */
+    position: relative;
+    top: 15%;
+
+    font-weight: 600;
+}
+
+/* 收藏人數 */
+.likeCount {
+    flex: 3;
+    font-size: 25px;
+}
+
+/* ----------------章節---------------- */
+.CcoverTextWrap {
+    width: 100%;
+    display: flex;
+
+    /* background-color: #F2A516; */
+
+    padding: 3%;
+
+    transition: all 0.1s ease;
+}
+
+.CcoverTextWrap:hover{
+background-color: rgba(156, 155, 155, 0.644);
+}
+
+.EPcover {
+    border: 2px solid black;
+    flex: 2;
+    position: relative;
+}
+
+.EPtext {
+    flex: 5;
+    position: relative;
+    left: 10%;
+}
+
+.EPdate {
+    font-size: 20px;
+    color: #666666;
+}
+
+.episodeTitle {
+    font-size: 25px;
+    color: #000000;
+}
+
+.Cpoint {
+    display: flex;
+}
+
+/* P圖案 */
+.episodePoint::before {
+    content: "P";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+    background-color: #ffd200;
+    border-radius: 1.4em;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1;
+    color: #fff;
+}
+
+
+/* 無料效果 */
+.mod-episode-point--free::before {
+    content: '無料';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    border: 2px solid #dc0000;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #dc0000;
+    white-space: nowrap;
+
+    position: relative;
+    bottom: 10%;
+}
+
+/* ------------推薦------------------ */
+.osusume {
+    flex: 2.5;
+    height: 100%;
+    padding-right: 1%;
+    /* background-color: #ffecec; */
+}
+
+.OStiltle {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    white-space: nowrap;
+}
+
+.OStiltle::before {
+    content: '';
+    /* border-right: 5px solid rgb(206, 48, 48); */
+    width: 5px;
+    height: 25px;
+    position: relative;
+    right: 2%;
+    background-color: #dc0000;
+}
+
+.OSCoverWrap {
+    margin-bottom: 3%;
+    transition: all 0.2s;
+}
+
+.OSCoverWrap:hover{
+    filter: brightness(70%);
+}
+
+/* 推薦卡片文字 */
+.Cardbody {
+    width: 100%;
+    padding: 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 65px;
+    background: linear-gradient(rgb(172, 172, 172), rgb(59, 59, 59));
+}
+
+.OSname {
+    width: 100%;
+    line-height: 1;
+    position: relative;
+    top: 20%;
+    color: #f8f8f8;
+    /* background-color: #dc2920; */
+}
+
+/* -------------------------------------------- */
+
+/* Footer */
+.myFooter {
+    background-color: #969696;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+
+    position: relative;
+}
+
+.myFooter>.search {
+    margin-left: 6%;
+    background-color: green;
+    height: 40px;
+    width: 250px;
+    display: flex;
+}
+
+.myFooter>.search>.search-bar {
+    height: 100%;
+    width: 100%;
+}
+
+.footerURL {
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: burlywood; */
+}
+
+.footerURL>a {
+    color: #282828;
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+.footerURL>a:hover{
+    color: #c1610e;
+}
+
+.SNSlink {
+    margin-left: 20%;
+    /* background-color: blueviolet; */
+}
+
+.SNSlink>div {
+    margin-top: 20px;
+    width: 300px;
+    height: 70px;
+    display: flex;
+}
+
+.SNSlink>div>a {
+    margin: 5px;
+}
+
+.SNSlink>div>a>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
